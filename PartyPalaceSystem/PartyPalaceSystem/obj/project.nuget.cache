@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0lL+0RhS2w7wfEgrfk1kPNeUHcC8R3D9lKPPwU51WvJGMsqiGQq/xqQdN0/ZnMStve+SqFSTQhMJsLJdp+8fug==",
+  "dgSpecHash": "xhqb41tRNnu6BiwGEq/mCP4uX7vpnUd2d2uAcE0UnTN5hjVD4OGj+3pao9/wIDochiEV7vb4wSsRQ9n6A1cguA==",
   "success": true,
-  "projectFilePath": "E:\\dotNetTraining\\PartyPalaceSystem\\PartyPalaceSystem\\PartyPalaceSystem.csproj",
+  "projectFilePath": "E:\\dotNetTraining\\PartyPalaceVenueSystem\\PartyPalaceSystem\\PartyPalaceSystem\\PartyPalaceSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wintech\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.8\\microsoft.aspnetcore.mvc.razor.extensions.6.0.8.nupkg.sha512",
     "C:\\Users\\wintech\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\6.0.8\\microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.8.nupkg.sha512",

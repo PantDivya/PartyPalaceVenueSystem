@@ -7,10 +7,32 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PartyPalaceSystem.styles.css" asp-append-version="true" />
+    <style>
+        .home-image {
+            background-image: url('images/HomeImage.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            height: 550px;
+            max-width: 1400px;
+            margin: 0;
+            padding: 0;
+        }
+        .display-4{
+            
+        }
+
+        .form-group {
+            margin-right:65px;
+        }
+        #username{
+
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PartyPalaceSystem</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -30,13 +52,13 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container home-image">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted fixed-bottom">
         <div class="container">
             &copy; 2024 - PartyPalaceSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>

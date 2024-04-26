@@ -942,11 +942,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\dotNetTraining\\PartyPalaceSystem\\PartyPalaceSystem\\PartyPalaceSystem.csproj",
+      "projectUniqueName": "E:\\dotNetTraining\\PartyPalaceVenueSystem\\PartyPalaceSystem\\PartyPalaceSystem\\PartyPalaceSystem.csproj",
       "projectName": "PartyPalaceSystem",
-      "projectPath": "E:\\dotNetTraining\\PartyPalaceSystem\\PartyPalaceSystem\\PartyPalaceSystem.csproj",
+      "projectPath": "E:\\dotNetTraining\\PartyPalaceVenueSystem\\PartyPalaceSystem\\PartyPalaceSystem\\PartyPalaceSystem.csproj",
       "packagesPath": "C:\\Users\\wintech\\.nuget\\packages\\",
-      "outputPath": "E:\\dotNetTraining\\PartyPalaceSystem\\PartyPalaceSystem\\obj\\",
+      "outputPath": "E:\\dotNetTraining\\PartyPalaceVenueSystem\\PartyPalaceSystem\\PartyPalaceSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wintech\\AppData\\Roaming\\NuGet\\NuGet.Config",
