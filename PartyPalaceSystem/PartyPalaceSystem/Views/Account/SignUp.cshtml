@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "SignUp Page";
+}
+
+
+<div class="form-group mt-5" style=" width:50%; margin:auto;">
+    <h3 class="mb-5" style="text-align:center;">SignUp Page</h3>
+    <div class="mt-4 mx-lg-4">
+        <form>
+            <div class="mb-4 ">
+                <label class="form-label">Username</label><br />
+                <input class="form-control" type="text" id="username" placeholder="Enter Username" />
+            </div>
+            <div class="mb-4 ">
+                <label class="form-label">Email</label><br />
+                <input class="form-control" type="text" id="email" placeholder="Enter Email" />
+            </div>
+            <div class="mb-4 ">
+                <label class="form-label">Contact</label><br />
+                <input class="form-control" type="text" id="contact" placeholder="Enter Contact" />
+            </div>
+            <div class="mb-4 ">
+                <label class="form-label">Password</label><br />
+                <input class="form-control" type="password" id="password" placeholder="Enter Password" />
+            </div>
+            <div class="button form">
+                <input class="btn btn-outline-success float-end" type="button" value="SignUp" />
+            </div>
+            <div><p>Already Registered?</p><a asp-controller="Account" asp-action="SignIn">SignIn</a></div>
+        </form>
+    </div>
+</div>
