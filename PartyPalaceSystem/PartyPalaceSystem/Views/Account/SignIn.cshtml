@@ -1,23 +1,23 @@
 ﻿@{
     ViewData["Title"] = "SignIn Page";
 }
-
+@model PartyPalaceSystem.Models.SignInModel
 
 <div class="form-group mt-5" style=" width:50%; margin:auto;">
     <h3 class="mb-5" style="text-align:center;">Login Page</h3>
     <div class="mt-4 mx-lg-4">
-        <form>
+        <form method="post" action="SignIn">
             <div class="mb-4 ">
                 <label class="form-label">Username</label><br />
-                <input class="form-control" type="text" id="username" placeholder="Enter Username" />
+                <input class="form-control" type="text" id="username" asp-for="username" placeholder="Enter Username" />
             </div>
 
             <div class="mb-4 ">
                 <label class="form-label">Password</label><br />
-                <input class="form-control" type="password" id="password" placeholder="Enter Password" />
+                <input class="form-control" type="password" id="password" asp-for="password" placeholder="Enter Password" />
             </div>
             <div class="button form">
-                <input class="btn btn-outline-success float-end" type="button" value="SignIn" />
+                <input class="btn btn-outline-success float-end" type="submit" value="SignIn" />
             </div>
             <div><p>Not Registered?</p><a asp-controller="Account" asp-action="SignUp">SignUp</a></div>
         </form>
