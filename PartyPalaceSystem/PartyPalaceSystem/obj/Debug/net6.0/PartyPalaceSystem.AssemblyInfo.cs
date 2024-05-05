@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PartyPalaceSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c979561cbb60738d22d64a1d0d1a7b1a08098094")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+452b92f1c84f86a3117033a1477cadb1b3c22748")]
 [assembly: System.Reflection.AssemblyProductAttribute("PartyPalaceSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PartyPalaceSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
