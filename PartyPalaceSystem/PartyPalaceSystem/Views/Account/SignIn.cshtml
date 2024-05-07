@@ -25,16 +25,62 @@
     </div>
 </div>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+
 <script>
+
     $(document).ready(function () {
-        $("body").click("#btnSubmit", function () {
+        $("body").on('click', "#btnSubmit", function () {
             var Email = $("#username").val();
             var Password = $("#password").val();
+            //validation
+            if (Email === "" || Password === "") {
+                $('#invalid').text("Input Fields can't be empty");
+                $('#invalid').css("color", "red");
+                return false;
+            } else if (IsEmail(Email) === false) {
+                var msg_email = $('#invalid_email').text("Entered username is not valid!!");
+                $('#invalid_email').css("color", "red");
+
+                return false;
+            } else if (IsPassword(Password) === false) {
+                var msg_password = $('#invalid_password').text("Entered password is not valid!!");
+                $('#invalid_password').css("color", "red");
+
+                return false;
+            } else {
+                return true;
+            }
+
+            function IsEmail(Email) {
+                if (!Email.trim().includes('@@') || Email.trim().includes(',')) {
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+            function IsPassword(Password) {
+                if (Password.length < 8) {
+                    return false;
+                } else if (!/[A-Z]/.test(Password)) {
+                    return false;
+                } else if (!/[a-z]/.test(Password)) {
+                    return false;
+                } else if (!/\d/.test(Password)) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
             $.ajax({
-                url: "/Account/SignIn",
+                url: "/Account/SignIn?username=" + Email + "&password=" + Password,
                 method: "post"
             }).done(function () {
-                $(this).addClass("done");
+                alert('successful');
+            }).fail(function () {
+                alert('login failed');
             });
         });
     });

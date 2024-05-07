@@ -48,7 +48,7 @@ namespace PartyPalaceSystem.Controllers
             {
                 return View("Error");
             }
-            }
+        }
 
         /* public ActionResult SignIn(SignInModel signInModel)
         {
